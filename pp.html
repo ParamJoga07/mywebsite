@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <title>My Works</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
+#abc{
+  width:100%;
+  margin-bottom: 20px;
+}
+nav{
+  width: 100%;
+  height: 50px;
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  opacity: 0.7;
+  line-height: 50px;
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+}
+nav ul li:hover{
+  background-color:#088;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS";
+  font-weight: 700;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.card1{
+  position: relative;
+  min-width: 340px;
+  height: 60px;
+  border-radius: 15px;
+  top: 0px;
+  bottom: 5px;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+}
+
+/* Images from Craig Henry's Dribbble profile: http://dribbble.com/craighenry */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  background-color: #fff;
+  box-shadow: inset 0 0 2px hsla(0, 0%, 0%, 0.2),
+    0 3px 1px hsla(0, 0%, 100%, 0.75), 0 -1px 1px 2px hsla(0, 0%, 0%, 0.1);
+  height: 25.75em;
+  left: 39%;
+  margin: -9.875em -13em;
+  padding: 0.5em;
+  position: absolute;
+  top: 55%;
+  width: 45em;
+}
+
+/* Frame */
+
+.slider:before {
+  background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+  bottom: -2.5em;
+  box-shadow: inset 0 1px 1px 1px hsla(0, 0%, 100%, 0.2),
+    inset 0 -2px 1px hsla(0, 0%, 0%, 0.4), 0 5px 50px hsla(0, 0%, 0%, 0.25),
+    0 20px 20px -15px hsla(0, 0%, 0%, 0.2),
+    0 30px 20px -15px hsla(0, 0%, 0%, 0.15),
+    0 40px 20px -15px hsla(0, 0%, 0%, 0.1);
+  content: "";
+  left: -2.5em;
+  position: absolute;
+  border-radius: 10px;
+  right: -2.5em;
+  top: -2.5em;
+  z-index: -1;
+}
+
+/* Mat */
+
+.slider:after {
+  background-color: #fff5e5;
+  bottom: -1.5em;
+  box-shadow: 0 2px 1px hsla(0, 0%, 100%, 0.2),
+    0 -1px 1px 1px hsla(0, 0%, 0%, 0.4),
+    inset 0 2px 3px 1px hsla(0, 0%, 0%, 0.2),
+    inset 0 4px 3px 1px hsla(0, 0%, 0%, 0.2),
+    inset 0 6px 3px 1px hsla(0, 0%, 0%, 0.1);
+  content: "";
+  left: -1.5em;
+  border-radius: 10px;
+  position: absolute;
+  right: -1.5em;
+  top: -1.5em;
+  z-index: -1;
+}
+
+/* Slides */
+
+.slider li {
+  box-shadow: 0 -1px 0 2px hsla(0, 0%, 0%, 0.03);
+  list-style: none;
+  position: absolute;
+}
+.slider input {
+  display: none;
+}
+
+/* Navigation */
+
+.slider label {
+  background-color: #111;
+  background-image: linear-gradient(transparent, hsla(0, 0%, 0%, 0.25));
+  border: 0.2em solid transparent;
+  border-radius: 10px;
+  bottom: 0.5em;
+  
+  cursor: pointer;
+  display: block;
+  height: 0.5em;
+  left: 24em;
+  opacity: 0;
+  position: absolute;
+  transition: 0.25s;
+  width: 0.5em;
+  visibility: hidden;
+  z-index: 10;
+}
+.slider label:after {
+  border-radius: 100%;
+  bottom: -0.2em;
+  box-shadow: inset 0 0 0 0.2em #111, inset 0 2px 2px #000,
+    0 1px 1px hsla(0, 0%, 100%, 0.25);
+  content: "";
+  left: -0.2em;
+  position: absolute;
+  right: -0.2em;
+  top: -0.2em;
+}
+.slider:hover label {
+  opacity: 1;
+  visibility: visible;
+}
+.slider input:checked + label {
+  background-color: #fff;
+}
+.slider:hover li:nth-child(1) label {
+  left: 0.5em;
+}
+.slider:hover li:nth-child(2) label {
+  left: 2em;
+}
+.slider:hover li:nth-child(3) label {
+  left: 3.5em;
+}
+.slider:hover li:nth-child(4) label {
+  left: 5em;
+}
+
+/* Images */
+
+.slider img {
+  height: 25.75em;
+  opacity: 0;
+  transition: 0.25s;
+  width: 45em;
+  vertical-align: top;
+  visibility: hidden;
+}
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+.card1{
+  position: relative;
+  min-width: 340px;
+  height: 60px;
+  border-radius: 15px;
+  top: 5px;
+  bottom: 5px;
+  margin-bottom:10px;
+  background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+}
+</style>
+
+</head>
+<body>
+    <div id="abc">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="pp.html">My Work</a></li>
+                <li><a href="profile.html">About</a></li>
+                <li><a href="contactme.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(62, 147.957, 243, 1)" offset="0%"></stop><stop stop-color="rgba(11, 85.545, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,80L21.8,75C43.6,70,87,60,131,55C174.5,50,218,50,262,55C305.5,60,349,70,393,75C436.4,80,480,80,524,81.7C567.3,83,611,87,655,75C698.2,63,742,37,785,26.7C829.1,17,873,23,916,33.3C960,43,1004,57,1047,58.3C1090.9,60,1135,50,1178,53.3C1221.8,57,1265,73,1309,80C1352.7,87,1396,83,1440,81.7C1483.6,80,1527,80,1571,66.7C1614.5,53,1658,27,1702,21.7C1745.5,17,1789,33,1833,45C1876.4,57,1920,63,1964,56.7C2007.3,50,2051,30,2095,31.7C2138.2,33,2182,57,2225,66.7C2269.1,77,2313,73,2356,60C2400,47,2444,23,2487,11.7C2530.9,0,2575,0,2618,11.7C2661.8,23,2705,47,2749,50C2792.7,53,2836,37,2880,28.3C2923.6,20,2967,20,3011,20C3054.5,20,3098,20,3120,20L3141.8,20L3141.8,100L3120,100C3098.2,100,3055,100,3011,100C2967.3,100,2924,100,2880,100C2836.4,100,2793,100,2749,100C2705.5,100,2662,100,2618,100C2574.5,100,2531,100,2487,100C2443.6,100,2400,100,2356,100C2312.7,100,2269,100,2225,100C2181.8,100,2138,100,2095,100C2050.9,100,2007,100,1964,100C1920,100,1876,100,1833,100C1789.1,100,1745,100,1702,100C1658.2,100,1615,100,1571,100C1527.3,100,1484,100,1440,100C1396.4,100,1353,100,1309,100C1265.5,100,1222,100,1178,100C1134.5,100,1091,100,1047,100C1003.6,100,960,100,916,100C872.7,100,829,100,785,100C741.8,100,698,100,655,100C610.9,100,567,100,524,100C480,100,436,100,393,100C349.1,100,305,100,262,100C218.2,100,175,100,131,100C87.3,100,44,100,22,100L0,100Z"></path></svg>
+    </div>
+    <center><div class="card1">
+      <h1>My Designs</h1>
+  </div></center>
+
+<ul class="slider">
+  <li>
+    <input type="radio" id="slide1" name="slide" checked>
+    <label for="slide1"></label>
+    <img src="quiz1.jpeg" alt="Panel 1">
+  </li>
+  <li>
+    <input type="radio" id="slide2" name="slide">
+    <label for="slide2"></label>
+    <img src="quiz.jpeg" alt="Panel 2">
+  </li>
+  <li>
+    <input type="radio" id="slide3" name="slide">
+    <label for="slide3"></label>
+    <img src="login1.jpeg" alt="Panel 3">
+  </li>
+  <li>
+    <input type="radio" id="slide4" name="slide">
+    <label for="slide4"></label>
+    <img src="calc1.jpg" alt="Panel 4">
+  </li>
+  <li>
+    <input type="radio" id="slide6" name="slide">
+    <label for="slide6"></label>
+    <img src="calc2.jpg" alt="Panel 6">
+  </li>
+</ul>
+</body>
+</html>
